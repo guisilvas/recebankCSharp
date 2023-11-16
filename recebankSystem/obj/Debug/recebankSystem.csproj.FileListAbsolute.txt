@@ -1,0 +1,9 @@
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\bin\Debug\recebankSystem.exe.config
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\bin\Debug\recebankSystem.exe
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\bin\Debug\recebankSystem.pdb
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.csproj.AssemblyReference.cache
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.Properties.Resources.resources
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.csproj.GenerateResource.cache
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.csproj.CoreCompileInputs.cache
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.exe
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.pdb

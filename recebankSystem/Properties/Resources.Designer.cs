@@ -73,49 +73,9 @@ namespace recebankSystem.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap logo {
-            get {
-                object obj = ResourceManager.GetObject("logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap luvaVem {
-            get {
-                object obj = ResourceManager.GetObject("luvaVem", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap LUVAX_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("LUVAX-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap RECEBA_ESSE_PIX__1__removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("RECEBA_ESSE_PIX__1_-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap RECEBA_ESSE_PIX__3_ {
-            get {
-                object obj = ResourceManager.GetObject("RECEBA ESSE PIX (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

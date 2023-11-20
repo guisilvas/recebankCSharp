@@ -118,22 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="campo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\campo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RECEBA_ESSE_PIX__1_-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RECEBA_ESSE_PIX__1_-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="luvaVem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\luvaVem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LUVAX-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LUVAX-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RECEBA ESSE PIX (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RECEBA ESSE PIX (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="campo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\campo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

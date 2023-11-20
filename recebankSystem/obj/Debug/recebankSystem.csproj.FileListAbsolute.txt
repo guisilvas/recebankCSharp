@@ -7,14 +7,3 @@ C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\rec
 C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.csproj.CoreCompileInputs.cache
 C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.exe
 C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.pdb
-C:\xampp\htdocs\recebankCSharp\recebankSystem\bin\Debug\recebankSystem.exe.config
-C:\xampp\htdocs\recebankCSharp\recebankSystem\bin\Debug\recebankSystem.exe
-C:\xampp\htdocs\recebankCSharp\recebankSystem\bin\Debug\recebankSystem.pdb
-C:\xampp\htdocs\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.csproj.AssemblyReference.cache
-C:\xampp\htdocs\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.Form1.resources
-C:\xampp\htdocs\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.Form3.resources
-C:\xampp\htdocs\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.Properties.Resources.resources
-C:\xampp\htdocs\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.csproj.GenerateResource.cache
-C:\xampp\htdocs\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.csproj.CoreCompileInputs.cache
-C:\xampp\htdocs\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.exe
-C:\xampp\htdocs\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.pdb

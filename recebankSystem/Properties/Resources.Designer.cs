@@ -83,6 +83,16 @@ namespace recebankSystem.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap campoMarcado {
+            get {
+                object obj = ResourceManager.GetObject("campoMarcado", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap creditCard {
             get {
                 object obj = ResourceManager.GetObject("creditCard", resourceCulture);
@@ -166,6 +176,16 @@ namespace recebankSystem.Properties {
         internal static System.Drawing.Bitmap productsBackground {
             get {
                 object obj = ResourceManager.GetObject("productsBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap terno_verde_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("terno_verde-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

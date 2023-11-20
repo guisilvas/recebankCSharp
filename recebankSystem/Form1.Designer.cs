@@ -53,6 +53,7 @@
             this.btnRegister.Text = "CADASTRAR";
             this.btnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // pictureBox1
             // 
@@ -148,6 +149,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.Color.DarkGray;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

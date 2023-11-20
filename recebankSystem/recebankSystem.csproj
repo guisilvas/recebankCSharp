@@ -166,6 +166,9 @@
     <EmbeddedResource Include="Form10.resx">
       <DependentUpon>Form10.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +231,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\campoComRefletor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campoMarcado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terno_verde-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

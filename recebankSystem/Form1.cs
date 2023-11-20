@@ -51,5 +51,11 @@ namespace recebankSystem
         {
 
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            Form3 abrirform3 = new Form3();
+            abrirform3.ShowDialog();
+        }
     }
 }

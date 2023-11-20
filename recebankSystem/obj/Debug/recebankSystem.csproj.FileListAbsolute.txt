@@ -92,3 +92,4 @@ C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\rec
 C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.Form6.resources
 C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.Form7.resources
 C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.csproj.CopyComplete
+C:\Users\ALUNO PROZ\Documents\GitHub\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.Form3.resources

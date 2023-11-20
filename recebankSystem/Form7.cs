@@ -16,5 +16,20 @@ namespace recebankSystem
         {
             InitializeComponent();
         }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

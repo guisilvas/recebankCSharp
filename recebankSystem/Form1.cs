@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,33 @@ namespace recebankSystem
 {
     public partial class Form1 : Form
     {
+        MySqlConnection Conexao;
+        string dataSource = "datasource=localhost;username=root;password=;database=recebankDB";
+
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
+            try
+            {
+                Conexao = new MySqlConnection(dataSource);
 
+                //string sql = "SELECT * FROM user WHERE id = 'id'"
+
+                Conexao.Open();
+                MessageBox.Show("Deu certo");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Conexao.Close();
+            }
         }
     }
 }

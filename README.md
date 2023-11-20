@@ -3,7 +3,7 @@ Sistema bancário com Banco de Dados - Desenvolvimento de Sistemas: Módulo Dese
 
 ## Banco de dados
 
--- Destrui o banco caso já exista
+-- Destrói o banco caso já exista
 DROP DATABASE IF EXISTS `recebankDB`;
 
 -- Cria o Banco de Dados

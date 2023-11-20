@@ -28,128 +28,146 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnRegister = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txLogin = new System.Windows.Forms.TextBox();
-            this.txSenha = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txSenha = new System.Windows.Forms.TextBox();
             this.forgotPass = new System.Windows.Forms.LinkLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegister
             // 
+            this.btnRegister.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.Black;
-            this.btnRegister.Location = new System.Drawing.Point(412, 395);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegister.Location = new System.Drawing.Point(378, 359);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(227, 82);
+            this.btnRegister.Size = new System.Drawing.Size(170, 62);
             this.btnRegister.TabIndex = 0;
             this.btnRegister.Text = "CADASTRAR";
-            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnRegister.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::recebankSystem.Properties.Resources.luvaRegisterNoFundo;
+            this.pictureBox1.Location = new System.Drawing.Point(-191, 80);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(810, 489);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // txLogin
             // 
+            this.txLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txLogin.Location = new System.Drawing.Point(69, 183);
-            this.txLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txLogin.Location = new System.Drawing.Point(327, 230);
             this.txLogin.Name = "txLogin";
-            this.txLogin.Size = new System.Drawing.Size(353, 30);
+            this.txLogin.Size = new System.Drawing.Size(266, 26);
             this.txLogin.TabIndex = 1;
-            // 
-            // txSenha
-            // 
-            this.txSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txSenha.Location = new System.Drawing.Point(69, 260);
-            this.txSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txSenha.Name = "txSenha";
-            this.txSenha.Size = new System.Drawing.Size(353, 30);
-            this.txSenha.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Lime;
-            this.label1.Location = new System.Drawing.Point(75, 155);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Login";
+            this.txLogin.TextChanged += new System.EventHandler(this.txLogin_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Lime;
-            this.label2.Location = new System.Drawing.Point(64, 231);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.ForeColor = System.Drawing.Color.LimeGreen;
+            this.label2.Location = new System.Drawing.Point(429, 269);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 25);
+            this.label2.Size = new System.Drawing.Size(61, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Senha";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LimeGreen;
+            this.label1.Location = new System.Drawing.Point(437, 207);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "CPF";
+            // 
+            // txSenha
+            // 
+            this.txSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txSenha.Location = new System.Drawing.Point(327, 292);
+            this.txSenha.Name = "txSenha";
+            this.txSenha.Size = new System.Drawing.Size(266, 26);
+            this.txSenha.TabIndex = 2;
             // 
             // forgotPass
             // 
             this.forgotPass.AutoSize = true;
-            this.forgotPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forgotPass.Location = new System.Drawing.Point(131, 295);
-            this.forgotPass.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.forgotPass.BackColor = System.Drawing.Color.Transparent;
+            this.forgotPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forgotPass.Location = new System.Drawing.Point(403, 321);
             this.forgotPass.Name = "forgotPass";
-            this.forgotPass.Size = new System.Drawing.Size(199, 25);
+            this.forgotPass.Size = new System.Drawing.Size(135, 16);
             this.forgotPass.TabIndex = 5;
             this.forgotPass.TabStop = true;
             this.forgotPass.Text = "Esqueci minha senha";
             // 
-            // panel1
+            // pictureBox2
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.forgotPass);
-            this.panel1.Controls.Add(this.txSenha);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txLogin);
-            this.panel1.Location = new System.Drawing.Point(293, 58);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(484, 447);
-            this.panel1.TabIndex = 6;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::recebankSystem.Properties.Resources.logoPNG;
+            this.pictureBox2.Location = new System.Drawing.Point(200, -159);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(406, 363);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1064, 553);
+            this.BackgroundImage = global::recebankSystem.Properties.Resources.campoComRefletor;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(798, 449);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txSenha);
+            this.Controls.Add(this.txLogin);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.forgotPass);
             this.Controls.Add(this.btnRegister);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.Color.DarkGray;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txLogin;
-        private System.Windows.Forms.TextBox txSenha;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txSenha;
         private System.Windows.Forms.LinkLabel forgotPass;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

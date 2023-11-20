@@ -220,5 +220,14 @@
   <ItemGroup>
     <None Include="Resources\Luva-de-Pedreiro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luvaRegisterNoFundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoPNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campoComRefletor.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

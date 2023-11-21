@@ -63,6 +63,9 @@ namespace recebankSystem
 
         }
 
-        
+        private void cmbCpf_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

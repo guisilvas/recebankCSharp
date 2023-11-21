@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txLogin = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,20 +40,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnRegister
+            // btnLogin
             // 
-            this.btnRegister.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.ForeColor = System.Drawing.Color.Black;
-            this.btnRegister.Location = new System.Drawing.Point(378, 359);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(170, 62);
-            this.btnRegister.TabIndex = 0;
-            this.btnRegister.Text = "CADASTRAR";
-            this.btnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            this.btnLogin.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.Black;
+            this.btnLogin.Location = new System.Drawing.Point(378, 359);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(170, 62);
+            this.btnLogin.TabIndex = 0;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // pictureBox1
             // 
@@ -108,18 +108,20 @@
             this.txSenha.Name = "txSenha";
             this.txSenha.Size = new System.Drawing.Size(266, 26);
             this.txSenha.TabIndex = 2;
+            this.txSenha.UseSystemPasswordChar = true;
             // 
             // forgotPass
             // 
             this.forgotPass.AutoSize = true;
             this.forgotPass.BackColor = System.Drawing.Color.Transparent;
-            this.forgotPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forgotPass.Location = new System.Drawing.Point(403, 321);
+            this.forgotPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
+            this.forgotPass.Location = new System.Drawing.Point(375, 321);
             this.forgotPass.Name = "forgotPass";
-            this.forgotPass.Size = new System.Drawing.Size(135, 16);
+            this.forgotPass.Size = new System.Drawing.Size(182, 17);
             this.forgotPass.TabIndex = 5;
             this.forgotPass.TabStop = true;
-            this.forgotPass.Text = "Esqueci minha senha";
+            this.forgotPass.Text = "Ainda não tenho uma conta";
+            this.forgotPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.forgotPass_LinkClicked);
             // 
             // pictureBox2
             // 
@@ -145,7 +147,7 @@
             this.Controls.Add(this.txLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.forgotPass);
-            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.Color.DarkGray;
@@ -162,7 +164,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txLogin;
         private System.Windows.Forms.Label label2;

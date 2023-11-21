@@ -42,9 +42,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(380, 220);
+            this.button1.Location = new System.Drawing.Point(379, 216);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(92, 40);
             this.button1.TabIndex = 0;
             this.button1.Text = "CARTÃO";
             this.button1.UseVisualStyleBackColor = false;
@@ -54,9 +54,9 @@
             // 
             this.button2.BackColor = System.Drawing.Color.LimeGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(371, 254);
+            this.button2.Location = new System.Drawing.Point(357, 262);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 23);
+            this.button2.Size = new System.Drawing.Size(136, 40);
             this.button2.TabIndex = 1;
             this.button2.Text = "EMPRESTIMO";
             this.button2.UseVisualStyleBackColor = false;
@@ -66,9 +66,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.LimeGreen;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(365, 286);
+            this.button3.Location = new System.Drawing.Point(357, 308);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 23);
+            this.button3.Size = new System.Drawing.Size(136, 40);
             this.button3.TabIndex = 2;
             this.button3.Text = "FINANCIAMENTO";
             this.button3.UseVisualStyleBackColor = false;
@@ -78,9 +78,9 @@
             // 
             this.button4.BackColor = System.Drawing.Color.LimeGreen;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(380, 318);
+            this.button4.Location = new System.Drawing.Point(379, 354);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(92, 40);
             this.button4.TabIndex = 3;
             this.button4.Text = "SEGURO";
             this.button4.UseVisualStyleBackColor = false;

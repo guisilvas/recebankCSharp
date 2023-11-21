@@ -54,8 +54,16 @@ namespace recebankSystem
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form3 abrirform3 = new Form3();
             abrirform3.ShowDialog();
+        }
+
+        private void forgotPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Form2 abrirform2 = new Form2();
+            abrirform2.ShowDialog();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace recebankSystem
     public partial class Form4 : Form
     {
         MySqlConnection Conexao;
-        string dataSource = "datasource=localhost;username=root;password=;database=recebankDB";
+        string dataSource = "datasource=localhost;username=root;password=root;database=recebankDB";
 
         public Form4()
         {
@@ -29,7 +29,19 @@ namespace recebankSystem
                 Conexao.Open();
                 MessageBox.Show("Deu certo");
 
-                //string sql = "SELECT * FROM user WHERE id = 'id'"
+                MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name", Conexao);
+                command.Parameters.AddWithValue("@id", 1);
+                MySqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        // Preencha a textLabel com o dado
+                        lblName.Text = reader["name"].ToString();
+                    }
+                }
+
             }
             catch (Exception ex)
             {
@@ -39,9 +51,6 @@ namespace recebankSystem
             {
                 Conexao.Close();
             }
-
-
-
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
@@ -51,8 +60,23 @@ namespace recebankSystem
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            
 
         }
 
+        private void lblMessage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picGlove_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

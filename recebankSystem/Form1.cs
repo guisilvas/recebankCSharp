@@ -15,7 +15,7 @@ namespace recebankSystem
     public partial class Form1 : Form
     {
         MySqlConnection Conexao;
-        string dataSource = "datasource=localhost;username=root;password=;database=recebankDB";
+        string dataSource = "datasource=localhost;username=root;password=root;database=recebankDB";
 
         public Form1()
         {

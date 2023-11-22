@@ -28,35 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.lblIncome = new System.Windows.Forms.Label();
-            this.cmbIncome = new System.Windows.Forms.ComboBox();
             this.picGlove = new System.Windows.Forms.PictureBox();
             this.lblMessage = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picGlove)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(212, 10);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(265, 36);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Cartão de Crédito";
             // 
             // btnConfirm
             // 
             this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirm.Location = new System.Drawing.Point(224, 321);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirm.Location = new System.Drawing.Point(592, 390);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(103, 35);
             this.btnConfirm.TabIndex = 1;
@@ -67,8 +58,8 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(369, 321);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Location = new System.Drawing.Point(457, 390);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(103, 35);
             this.btnCancel.TabIndex = 2;
@@ -76,66 +67,94 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // lblIncome
-            // 
-            this.lblIncome.AutoSize = true;
-            this.lblIncome.BackColor = System.Drawing.Color.Transparent;
-            this.lblIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIncome.ForeColor = System.Drawing.Color.White;
-            this.lblIncome.Location = new System.Drawing.Point(214, 256);
-            this.lblIncome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblIncome.Name = "lblIncome";
-            this.lblIncome.Size = new System.Drawing.Size(124, 20);
-            this.lblIncome.TabIndex = 8;
-            this.lblIncome.Text = "Renda Mensal";
-            // 
-            // cmbIncome
-            // 
-            this.cmbIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbIncome.FormattingEnabled = true;
-            this.cmbIncome.Location = new System.Drawing.Point(345, 254);
-            this.cmbIncome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cmbIncome.Name = "cmbIncome";
-            this.cmbIncome.Size = new System.Drawing.Size(140, 25);
-            this.cmbIncome.TabIndex = 13;
-            // 
             // picGlove
             // 
             this.picGlove.BackColor = System.Drawing.Color.Transparent;
             this.picGlove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picGlove.Image = global::recebankSystem.Properties.Resources.Luva_de_Pedreiro3;
-            this.picGlove.Location = new System.Drawing.Point(-94, 22);
-            this.picGlove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picGlove.Location = new System.Drawing.Point(-94, 27);
+            this.picGlove.Margin = new System.Windows.Forms.Padding(2);
             this.picGlove.Name = "picGlove";
-            this.picGlove.Size = new System.Drawing.Size(397, 383);
+            this.picGlove.Size = new System.Drawing.Size(374, 452);
             this.picGlove.TabIndex = 18;
             this.picGlove.TabStop = false;
             // 
             // lblMessage
             // 
-            this.lblMessage.AutoSize = true;
             this.lblMessage.BackColor = System.Drawing.Color.Transparent;
-            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.lblMessage.ForeColor = System.Drawing.Color.Transparent;
-            this.lblMessage.Location = new System.Drawing.Point(199, 107);
+            this.lblMessage.Location = new System.Drawing.Point(350, 174);
             this.lblMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(386, 87);
+            this.lblMessage.Size = new System.Drawing.Size(415, 136);
             this.lblMessage.TabIndex = 20;
-            this.lblMessage.Text = "Olá                   . Para receber\r\nseu cartão de crédito da Recebank\r\ninforme " +
-    "a sua renda mensal.";
+            this.lblMessage.Text = "Informe a sua renda mensal.";
+            this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMessage.Click += new System.EventHandler(this.lblMessage_Click);
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.Transparent;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold);
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(244, 107);
+            this.lblName.Location = new System.Drawing.Point(537, 154);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(109, 29);
+            this.lblName.Size = new System.Drawing.Size(112, 39);
             this.lblName.TabIndex = 21;
-            this.lblName.Text = "Douglas";
+            this.lblName.Text = "Nome";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(459, 150);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 46);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Olá,";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.textBox1.Location = new System.Drawing.Point(488, 304);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(198, 45);
+            this.textBox1.TabIndex = 24;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(410, 304);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 46);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "R$";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::recebankSystem.Properties.Resources.logoPNG;
+            this.pictureBox1.Location = new System.Drawing.Point(286, -98);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(547, 330);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
             // 
             // Form4
             // 
@@ -143,34 +162,37 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::recebankSystem.Properties.Resources.produtos;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(596, 379);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblName);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblMessage);
-            this.Controls.Add(this.cmbIncome);
-            this.Controls.Add(this.lblIncome);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.picGlove);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picGlove)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Label lblIncome;
-        private System.Windows.Forms.ComboBox cmbIncome;
         private System.Windows.Forms.PictureBox picGlove;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

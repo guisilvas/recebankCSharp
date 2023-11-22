@@ -15,7 +15,7 @@ namespace recebankSystem
     public partial class Form1 : Form
     {
         MySqlConnection Conexao;
-        string dataSource = "datasource=localhost;username=root;password=root;database=recebankDB";
+        string dataSource = "datasource=localhost;username=root;password=;database=recebankDB";
 
         public Form1()
         {
@@ -24,7 +24,7 @@ namespace recebankSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+     
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -39,43 +39,52 @@ namespace recebankSystem
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
+ 
+            string cpf = txtLogin.Text;
+            string pass = txtPass.Text;
+
             try
             {
-                string cpf = txtLogin.Text; 
-                string pass = txtPass.Text;
-                using (MySqlConnection connection = new MySqlConnection(dataSource))
+                if (string.IsNullOrEmpty(cpf) || string.IsNullOrEmpty(pass))
                 {
-                    connection.Open();
-
-                    string querySQL = "SELECT user_id, pass FROM user WHERE cpf = @cpf";
-                    MySqlCommand command = new MySqlCommand(querySQL, connection);
-                    command.Parameters.AddWithValue("@cpf", cpf);
-
-                    using (MySqlDataReader reader = command.ExecuteReader())
+                    MessageBox.Show("Os campos devem ser preenchidos.");
+                }
+                else
+                {
+                    using (MySqlConnection connection = new MySqlConnection(dataSource))
                     {
-                        if (reader.HasRows)
-                        {
-                            while (reader.Read())
-                            {
-                                int user_id = Convert.ToInt32(reader["user_id"]);
-                                string storedPass = reader["pass"].ToString();
+                        connection.Open();
 
-                                if (pass == storedPass)
+                        string querySQL = "SELECT user_id, pass FROM user WHERE cpf = @cpf";
+                        MySqlCommand command = new MySqlCommand(querySQL, connection);
+                        command.Parameters.AddWithValue("@cpf", cpf);
+
+                        using (MySqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.HasRows)
+                            {
+                                while (reader.Read())
                                 {
-                                    Form3 newForm = new Form3();
-                                    newForm.UserID = user_id; 
-                                    newForm.Show();
-                                    this.Hide();
-                                }
-                                else
-                                {
-                                    MessageBox.Show("Senha incorreta.");
+                                    int user_id = Convert.ToInt32(reader["user_id"]);
+                                    string storedPass = reader["pass"].ToString();
+
+                                    if (pass == storedPass)
+                                    {
+                                        Form3 newForm = new Form3();
+                                        newForm.UserID = user_id;
+                                        newForm.Show();
+                                        this.Hide();
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("Verifique os dados inseridos.");
+                                    }
                                 }
                             }
-                        }
-                        else
-                        {
-                            MessageBox.Show("CPF não encontrado.");
+                            else
+                            {
+                                MessageBox.Show("CPF não encontrado.");
+                            }
                         }
                     }
                 }

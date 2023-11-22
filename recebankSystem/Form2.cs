@@ -25,7 +25,7 @@ namespace recebankSystem
 
         //Conexão com o banco
         MySqlConnection conexao;
-        string dataSource = "datasource=localhost;username=root;password=root;database=recebankDB";
+        string dataSource = "datasource=localhost;username=root;password=;database=recebankDB";
 
         //ID do produto
         int productID = 1;

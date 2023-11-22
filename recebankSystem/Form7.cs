@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace recebankSystem
 {
@@ -23,11 +23,10 @@ namespace recebankSystem
 
         //Conexão com o banco
         MySqlConnection conexao;
-        string dataSource = "datasource=localhost;username=root;password=root;database=recebankDB";
+        string dataSource = "datasource=localhost;username=root;password=;database=recebankDB";
 
         //ID do produto
         int productID = 1;
-
 
         public Form7()
         {
@@ -40,9 +39,8 @@ namespace recebankSystem
             {
                 conexao = new MySqlConnection(dataSource);
                 conexao.Open();
-                MessageBox.Show("Deu certo");
 
-                MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name",conexao);
+                MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name", conexao);
                 command.Parameters.AddWithValue("@id", 1);
                 MySqlDataReader reader = command.ExecuteReader();
 
@@ -51,10 +49,10 @@ namespace recebankSystem
                     while (reader.Read())
                     {
                         // Preencha a textLabel com o dado
+                        string nome = reader["name"].ToString();
                         lblName.Text = reader["name"].ToString();
                     }
                 }
-
             }
             catch (Exception ex)
             {
@@ -65,26 +63,36 @@ namespace recebankSystem
                 conexao.Close();
             }
         }
-   
 
-    private void btnConfirm_Click(object sender, EventArgs e)
+        private void btnConfirm_Click_1(object sender, EventArgs e)
         {
+            conexao = new MySqlConnection(dataSource);
+            conexao.Open();
 
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conexao;
+
+            // preparando o INSERT no bando de dados
+            cmd.CommandText = "INSERT INTO user_product (user_id, product_id) VALUES (@userID, @productID)";
+            cmd.Parameters.AddWithValue("@userID", userID);
+            cmd.Parameters.AddWithValue("@productID", productID);
+
+            // executando a query no sql
+            cmd.ExecuteNonQuery();
+
+            int limit = Convert.ToInt32(txtIncome.Text);
+            MessageBox.Show("Receba esse seguro! Sua vida agora vale R$" + (limit * 3.0) + " graças a Deus pai!");
+
+            this.Hide();
+            Form3 openform3 = new Form3();
+            openform3.ShowDialog();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnCancel_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void lblPhone_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblName_Click(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            Form3 openform3 = new Form3();
+            openform3.ShowDialog();
         }
     }
 }

@@ -87,7 +87,6 @@
             this.label1.Size = new System.Drawing.Size(68, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nome";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtName
             // 
@@ -133,7 +132,6 @@
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(314, 30);
             this.txtDate.TabIndex = 9;
-            this.txtDate.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtPhone
             // 
@@ -144,7 +142,6 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(283, 30);
             this.txtPhone.TabIndex = 10;
-            this.txtPhone.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -158,7 +155,6 @@
             this.label3.Size = new System.Drawing.Size(206, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Data de Nascimento";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -172,7 +168,6 @@
             this.label4.Size = new System.Drawing.Size(97, 25);
             this.label4.TabIndex = 12;
             this.label4.Text = "Telefone";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtCity
             // 

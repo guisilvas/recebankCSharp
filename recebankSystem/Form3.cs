@@ -72,10 +72,11 @@ namespace recebankSystem
             this.Hide();
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
+
+        private void btnFinancing_Click_1(object sender, EventArgs e)
         {
-            Form8 abrirform8 = new Form8();
-            abrirform8.ShowDialog();
+            Form5 abrirform5 = new Form5();
+            abrirform5.ShowDialog();
             this.Hide();
         }
     }

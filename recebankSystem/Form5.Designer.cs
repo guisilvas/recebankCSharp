@@ -89,7 +89,6 @@
             this.lblName.Size = new System.Drawing.Size(135, 48);
             this.lblName.TabIndex = 32;
             this.lblName.Text = "Nome";
-            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // label2
             // 
@@ -146,6 +145,7 @@
             this.btnCancel.TabIndex = 30;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click_1);
             // 
             // btnConfirm
             // 

@@ -50,6 +50,7 @@ namespace recebankSystem
                     while (reader.Read())
                     {
                         // Preencha a textLabel com o dado
+                        string nome = reader["name"].ToString();
                         lblName.Text = reader["name"].ToString();
                     }
                 }
@@ -87,17 +88,12 @@ namespace recebankSystem
             // executando a query no sql
             cmd.ExecuteNonQuery();
 
-            // deu certo
-            MessageBox.Show("Produto requerido com sucesso!");
+            int limit = Convert.ToInt32(txtIncome.Text);
+            MessageBox.Show("Receba esse cartão de crédito com limite de R$" + (limit*1.20) + ", é o melhor do mundo!");
 
             this.Hide();
             Form3 openform3 = new Form3();
             openform3.ShowDialog();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

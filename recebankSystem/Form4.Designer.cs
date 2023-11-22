@@ -38,7 +38,6 @@
             this.lblCity = new System.Windows.Forms.Label();
             this.lblIncome = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
-            this.cmbName = new System.Windows.Forms.ComboBox();
             this.cmbCpf = new System.Windows.Forms.ComboBox();
             this.cmbDate = new System.Windows.Forms.ComboBox();
             this.cmbIncome = new System.Windows.Forms.ComboBox();
@@ -46,6 +45,7 @@
             this.cmbCity = new System.Windows.Forms.ComboBox();
             this.cmbPhone = new System.Windows.Forms.ComboBox();
             this.picGlove = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picGlove)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             // 
             this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.Location = new System.Drawing.Point(224, 321);
-            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirm.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(103, 35);
             this.btnConfirm.TabIndex = 1;
@@ -78,7 +78,7 @@
             // 
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(369, 321);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(103, 35);
             this.btnCancel.TabIndex = 2;
@@ -178,22 +178,12 @@
             this.lblPhone.TabIndex = 9;
             this.lblPhone.Text = "Telefone";
             // 
-            // cmbName
-            // 
-            this.cmbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbName.FormattingEnabled = true;
-            this.cmbName.Location = new System.Drawing.Point(172, 88);
-            this.cmbName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cmbName.Name = "cmbName";
-            this.cmbName.Size = new System.Drawing.Size(164, 25);
-            this.cmbName.TabIndex = 10;
-            // 
             // cmbCpf
             // 
             this.cmbCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCpf.FormattingEnabled = true;
             this.cmbCpf.Location = new System.Drawing.Point(172, 155);
-            this.cmbCpf.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCpf.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCpf.Name = "cmbCpf";
             this.cmbCpf.Size = new System.Drawing.Size(164, 25);
             this.cmbCpf.TabIndex = 11;
@@ -204,7 +194,7 @@
             this.cmbDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbDate.FormattingEnabled = true;
             this.cmbDate.Location = new System.Drawing.Point(172, 225);
-            this.cmbDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbDate.Margin = new System.Windows.Forms.Padding(2);
             this.cmbDate.Name = "cmbDate";
             this.cmbDate.Size = new System.Drawing.Size(164, 25);
             this.cmbDate.TabIndex = 12;
@@ -214,7 +204,7 @@
             this.cmbIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbIncome.FormattingEnabled = true;
             this.cmbIncome.Location = new System.Drawing.Point(338, 278);
-            this.cmbIncome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbIncome.Margin = new System.Windows.Forms.Padding(2);
             this.cmbIncome.Name = "cmbIncome";
             this.cmbIncome.Size = new System.Drawing.Size(140, 25);
             this.cmbIncome.TabIndex = 13;
@@ -224,7 +214,7 @@
             this.cmbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbState.FormattingEnabled = true;
             this.cmbState.Location = new System.Drawing.Point(402, 88);
-            this.cmbState.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbState.Margin = new System.Windows.Forms.Padding(2);
             this.cmbState.Name = "cmbState";
             this.cmbState.Size = new System.Drawing.Size(164, 25);
             this.cmbState.TabIndex = 14;
@@ -234,7 +224,7 @@
             this.cmbCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCity.FormattingEnabled = true;
             this.cmbCity.Location = new System.Drawing.Point(402, 155);
-            this.cmbCity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCity.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCity.Name = "cmbCity";
             this.cmbCity.Size = new System.Drawing.Size(164, 25);
             this.cmbCity.TabIndex = 15;
@@ -244,7 +234,7 @@
             this.cmbPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPhone.FormattingEnabled = true;
             this.cmbPhone.Location = new System.Drawing.Point(402, 225);
-            this.cmbPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbPhone.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPhone.Name = "cmbPhone";
             this.cmbPhone.Size = new System.Drawing.Size(164, 25);
             this.cmbPhone.TabIndex = 16;
@@ -254,11 +244,18 @@
             this.picGlove.BackColor = System.Drawing.Color.Transparent;
             this.picGlove.Image = global::recebankSystem.Properties.Resources.Luva_de_Pedreiro3;
             this.picGlove.Location = new System.Drawing.Point(-80, 10);
-            this.picGlove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picGlove.Margin = new System.Windows.Forms.Padding(2);
             this.picGlove.Name = "picGlove";
             this.picGlove.Size = new System.Drawing.Size(344, 432);
             this.picGlove.TabIndex = 18;
             this.picGlove.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(164, 93);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 19;
             // 
             // Form4
             // 
@@ -267,13 +264,13 @@
             this.BackgroundImage = global::recebankSystem.Properties.Resources.productsBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(602, 384);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.cmbPhone);
             this.Controls.Add(this.cmbCity);
             this.Controls.Add(this.cmbState);
             this.Controls.Add(this.cmbIncome);
             this.Controls.Add(this.cmbDate);
             this.Controls.Add(this.cmbCpf);
-            this.Controls.Add(this.cmbName);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.lblIncome);
             this.Controls.Add(this.lblCity);
@@ -285,7 +282,7 @@
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.picGlove);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form4_Load);
@@ -307,7 +304,6 @@
         private System.Windows.Forms.Label lblCity;
         private System.Windows.Forms.Label lblIncome;
         private System.Windows.Forms.Label lblPhone;
-        private System.Windows.Forms.ComboBox cmbName;
         private System.Windows.Forms.ComboBox cmbCpf;
         private System.Windows.Forms.ComboBox cmbDate;
         private System.Windows.Forms.ComboBox cmbIncome;
@@ -315,5 +311,6 @@
         private System.Windows.Forms.ComboBox cmbCity;
         private System.Windows.Forms.ComboBox cmbPhone;
         private System.Windows.Forms.PictureBox picGlove;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

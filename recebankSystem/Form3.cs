@@ -12,6 +12,13 @@ namespace recebankSystem
 {
     public partial class Form3 : Form
     {
+        public int UserID
+        {
+            get { return userID; }
+            set { userID = value; }
+        }
+        private int userID;
+
         public Form3()
         {
             InitializeComponent();

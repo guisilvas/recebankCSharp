@@ -42,7 +42,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(379, 216);
+            this.button1.Location = new System.Drawing.Point(379, 206);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 40);
             this.button1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.LimeGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(357, 262);
+            this.button2.Location = new System.Drawing.Point(357, 263);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 40);
             this.button2.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.LimeGreen;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(357, 308);
+            this.button3.Location = new System.Drawing.Point(357, 318);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 40);
             this.button3.TabIndex = 2;
@@ -78,7 +78,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.LimeGreen;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(379, 354);
+            this.button4.Location = new System.Drawing.Point(379, 375);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(92, 40);
             this.button4.TabIndex = 3;
@@ -102,7 +102,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::recebankSystem.Properties.Resources.logoPNG;
-            this.pictureBox2.Location = new System.Drawing.Point(211, -85);
+            this.pictureBox2.Location = new System.Drawing.Point(198, -95);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(406, 363);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -30,10 +30,10 @@
         {
             this.btnLogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txLogin = new System.Windows.Forms.TextBox();
+            this.txtLogin = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txSenha = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.forgotPass = new System.Windows.Forms.LinkLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,15 +65,15 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // txLogin
+            // txtLogin
             // 
-            this.txLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txLogin.Location = new System.Drawing.Point(327, 230);
-            this.txLogin.Name = "txLogin";
-            this.txLogin.Size = new System.Drawing.Size(266, 26);
-            this.txLogin.TabIndex = 1;
-            this.txLogin.TextChanged += new System.EventHandler(this.txLogin_TextChanged);
+            this.txtLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogin.Location = new System.Drawing.Point(327, 230);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(266, 26);
+            this.txtLogin.TabIndex = 1;
+            this.txtLogin.TextChanged += new System.EventHandler(this.txLogin_TextChanged);
             // 
             // label2
             // 
@@ -99,16 +99,16 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "CPF";
             // 
-            // txSenha
+            // txtPass
             // 
-            this.txSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txSenha.Location = new System.Drawing.Point(327, 292);
-            this.txSenha.Name = "txSenha";
-            this.txSenha.Size = new System.Drawing.Size(266, 26);
-            this.txSenha.TabIndex = 2;
-            this.txSenha.UseSystemPasswordChar = true;
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(327, 292);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(266, 26);
+            this.txtPass.TabIndex = 2;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // forgotPass
             // 
@@ -143,8 +143,8 @@
             this.ClientSize = new System.Drawing.Size(798, 449);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txSenha);
-            this.Controls.Add(this.txLogin);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.forgotPass);
             this.Controls.Add(this.btnLogin);
@@ -166,10 +166,10 @@
 
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txLogin;
+        private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txSenha;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.LinkLabel forgotPass;
         private System.Windows.Forms.PictureBox pictureBox2;
     }

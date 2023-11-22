@@ -1,5 +1,4 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,14 +15,6 @@ namespace recebankSystem
     {
         MySqlConnection Conexao;
         string dataSource = "datasource=localhost;username=root;password=;database=recebankDB";
-        int id = 0;
-        string name = "";
-        string cpf = "";
-        string birthDate = "";
-        string phone = "";
-        string state = "";
-        string city = "";
-        string income = "";
 
         public Form4()
         {
@@ -63,9 +54,5 @@ namespace recebankSystem
 
         }
 
-        private void cmbCpf_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

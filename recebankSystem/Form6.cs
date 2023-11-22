@@ -13,8 +13,21 @@ namespace recebankSystem
 {
     public partial class Form6 : Form
     {
-        MySqlConnection Conexao;
+        //Pegando o userID
+        public int UserID
+        {
+            get { return userID; }
+            set { userID = value; }
+        }
+        private int userID;
+
+        //Conexão com o banco
+        MySqlConnection conexao;
         string dataSource = "datasource=localhost;username=root;password=root;database=recebankDB";
+
+        //ID do produto
+        int productID = 1;
+
         public Form6()
         {
             InitializeComponent();
@@ -24,11 +37,11 @@ namespace recebankSystem
         {
             try
             {
-                Conexao = new MySqlConnection(dataSource);
-                Conexao.Open();
+                conexao = new MySqlConnection(dataSource);
+                conexao.Open();
                 MessageBox.Show("Deu certo");
 
-                MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name", Conexao);
+                MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name",conexao);
                 command.Parameters.AddWithValue("@id", 1);
                 MySqlDataReader reader = command.ExecuteReader();
 
@@ -48,7 +61,7 @@ namespace recebankSystem
             }
             finally
             {
-                Conexao.Close();
+                conexao.Close();
             }
         }
 
@@ -63,6 +76,11 @@ namespace recebankSystem
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
         {
 
         }

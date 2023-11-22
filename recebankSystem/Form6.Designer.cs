@@ -30,7 +30,7 @@
         {
             this.lblName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIncome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblMessage = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -52,6 +52,7 @@
             this.lblName.Size = new System.Drawing.Size(112, 39);
             this.lblName.TabIndex = 30;
             this.lblName.Text = "Nome";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // label1
             // 
@@ -66,14 +67,14 @@
             this.label1.Text = "Olá,";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txtIncome
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.textBox1.Location = new System.Drawing.Point(488, 302);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 45);
-            this.textBox1.TabIndex = 32;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.txtIncome.Location = new System.Drawing.Point(488, 302);
+            this.txtIncome.Name = "txtIncome";
+            this.txtIncome.Size = new System.Drawing.Size(198, 45);
+            this.txtIncome.TabIndex = 32;
+            this.txtIncome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -156,7 +157,7 @@
             this.Controls.Add(this.picGlove);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtIncome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnCancel);
@@ -177,7 +178,7 @@
 
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIncome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Button btnCancel;

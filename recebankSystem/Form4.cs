@@ -13,8 +13,20 @@ namespace recebankSystem
 {
     public partial class Form4 : Form
     {
-        MySqlConnection Conexao;
+          //Pegando o userID
+        public int UserID
+        {
+            get { return userID; }
+            set { userID = value; }
+        }
+        private int userID;
+
+        //Conexão com o banco
+        MySqlConnection conexao;
         string dataSource = "datasource=localhost;username=root;password=root;database=recebankDB";
+
+        //ID do produto
+        int productID = 1;
 
         public Form4()
         {
@@ -25,11 +37,11 @@ namespace recebankSystem
         {
             try
             {
-                Conexao = new MySqlConnection(dataSource);
-                Conexao.Open();
+                conexao = new MySqlConnection(dataSource);
+                conexao.Open();
                 MessageBox.Show("Deu certo");
 
-                MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name", Conexao);
+                MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name", conexao);
                 command.Parameters.AddWithValue("@id", 1);
                 MySqlDataReader reader = command.ExecuteReader();
 
@@ -49,7 +61,7 @@ namespace recebankSystem
             }
             finally
             {
-                Conexao.Close();
+                conexao.Close();
             }
         }
 
@@ -60,7 +72,24 @@ namespace recebankSystem
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            
+            conexao = new MySqlConnection(dataSource);
+            conexao.Open();
+
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conexao;
+
+            // preparando o INSERT no bando de dados
+            cmd.CommandText = "INSERT INTO user_product (user_id, product_id) VALUES (@userID, @productID)";
+
+            // executando a query no sql
+            cmd.ExecuteNonQuery();
+
+            // deu certo
+            MessageBox.Show("Produto requerido com sucesso!");
+
+            this.Hide();
+            Form3 openform3 = new Form3();
+            openform3.ShowDialog();
 
         }
 

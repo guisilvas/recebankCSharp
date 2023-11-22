@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,20 @@ namespace recebankSystem
 {
     public partial class Form3 : Form
     {
+        //Pegando o userID
         public int UserID
         {
             get { return userID; }
             set { userID = value; }
         }
         private int userID;
+
+        //Conexão com o banco
+        MySqlConnection conexao;
+        string dataSource = "datasource=localhost;username=root;password=root;database=recebankDB";
+
+        //ID do produto
+        int productID = 1;
 
         public Form3()
         {

@@ -191,3 +191,4 @@ C:\Users\guilherme\source\repos\guisilvas\projetofinalRECEBANK\recebankCSharp\re
 C:\Users\guilherme\source\repos\guisilvas\projetofinalRECEBANK\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.csproj.CopyComplete
 C:\Users\guilherme\source\repos\guisilvas\projetofinalRECEBANK\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.exe
 C:\Users\guilherme\source\repos\guisilvas\projetofinalRECEBANK\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.pdb
+C:\Users\guilherme\source\repos\guisilvas\projetofinalRECEBANK\recebankCSharp\recebankSystem\obj\Debug\recebankSystem.Form8.resources

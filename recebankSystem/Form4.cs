@@ -53,7 +53,6 @@ namespace recebankSystem
                         lblName.Text = reader["name"].ToString();
                     }
                 }
-
             }
             catch (Exception ex)
             {
@@ -65,12 +64,14 @@ namespace recebankSystem
             }
         }
 
-        private void btnConfirm_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Form3 openform3 = new Form3();
+            openform3.ShowDialog();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnConfirm_Click(object sender, EventArgs e)
         {
             conexao = new MySqlConnection(dataSource);
             conexao.Open();
@@ -80,6 +81,8 @@ namespace recebankSystem
 
             // preparando o INSERT no bando de dados
             cmd.CommandText = "INSERT INTO user_product (user_id, product_id) VALUES (@userID, @productID)";
+            cmd.Parameters.AddWithValue("@userID", userID);
+            cmd.Parameters.AddWithValue("@productID", productID);
 
             // executando a query no sql
             cmd.ExecuteNonQuery();
@@ -90,20 +93,9 @@ namespace recebankSystem
             this.Hide();
             Form3 openform3 = new Form3();
             openform3.ShowDialog();
-
         }
 
-        private void lblMessage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picGlove_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

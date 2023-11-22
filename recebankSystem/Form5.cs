@@ -39,7 +39,6 @@ namespace recebankSystem
             {
                 conexao = new MySqlConnection(dataSource);
                 conexao.Open();
-                MessageBox.Show("Deu certo");
 
                 MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name",conexao);
                 command.Parameters.AddWithValue("@id", 1);
@@ -76,6 +75,11 @@ namespace recebankSystem
         }
 
         private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirm_Click_1(object sender, EventArgs e)
         {
 
         }

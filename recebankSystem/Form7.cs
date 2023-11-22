@@ -26,11 +26,12 @@ namespace recebankSystem
         string dataSource = "datasource=localhost;username=root;password=;database=recebankDB";
 
         //ID do produto
-        int productID = 1;
+        int productID = 4;
 
         public Form7()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void Form7_Load(object sender, EventArgs e)

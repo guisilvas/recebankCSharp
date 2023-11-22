@@ -45,6 +45,8 @@
             // 
             // btnConfirm
             // 
+            this.btnConfirm.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnConfirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.Location = new System.Drawing.Point(789, 480);
             this.btnConfirm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -52,11 +54,14 @@
             this.btnConfirm.Size = new System.Drawing.Size(137, 43);
             this.btnConfirm.TabIndex = 1;
             this.btnConfirm.Text = "Confirmar";
-            this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.UseVisualStyleBackColor = false;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(609, 480);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -64,7 +69,7 @@
             this.btnCancel.Size = new System.Drawing.Size(137, 43);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancelar";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // picGlove
@@ -171,6 +176,7 @@
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.picGlove);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form4";
             this.Text = "Form4";

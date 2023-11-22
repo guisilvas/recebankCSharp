@@ -31,6 +31,7 @@ namespace recebankSystem
         public Form4()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -39,7 +40,6 @@ namespace recebankSystem
             {
                 conexao = new MySqlConnection(dataSource);
                 conexao.Open();
-                MessageBox.Show("Deu certo");
 
                 MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name", conexao);
                 command.Parameters.AddWithValue("@id", 1);

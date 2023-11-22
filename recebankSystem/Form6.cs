@@ -26,11 +26,12 @@ namespace recebankSystem
         string dataSource = "datasource=localhost;username=root;password=;database=recebankDB";
 
         //ID do produto
-        int productID = 1;
+        int productID = 3;
 
         public Form6()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void Form6_Load(object sender, EventArgs e)
@@ -39,7 +40,6 @@ namespace recebankSystem
             {
                 conexao = new MySqlConnection(dataSource);
                 conexao.Open();
-                MessageBox.Show("Deu certo");
 
                 MySqlCommand command = new MySqlCommand("SELECT name FROM user WHERE name = name", conexao);
                 command.Parameters.AddWithValue("@id", 1);

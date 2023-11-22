@@ -28,6 +28,7 @@ namespace recebankSystem
         public Form3()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void Form3_Load(object sender, EventArgs e)

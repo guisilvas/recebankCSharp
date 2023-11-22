@@ -147,6 +147,7 @@
             this.Controls.Add(this.btnLoan);
             this.Controls.Add(this.btnCard);
             this.Controls.Add(this.pictureBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form3";
             this.Text = "Form3";
